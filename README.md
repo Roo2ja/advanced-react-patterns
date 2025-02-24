@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# advanced-react-patterns
+A collection of common React design patterns for writing scalable and maintainable applications.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Advanced React Patterns 🚀
 
-## Available Scripts
+A collection of React design patterns to improve reusability, maintainability, and performance in modern React applications.
 
-In the project directory, you can run:
+## 📌 Features
+- Higher-Order Components (HOC)
+- Render Props Pattern
+- Compound Components
+- Context API
+- Fully typed with TypeScript
+- Dark/Light theme toggle using Context API
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📂 Project Structure
+advanced-react-patterns/ │── src/ │ ├── patterns/ │ │ ├── HigherOrderComponent/ │ │ │ ├── withLogger.tsx │ │ │ ├── Example.tsx │ │ ├── RenderProps/ │ │ │ ├── MouseTracker.tsx │ │ │ ├── Example.tsx │ │ ├── CompoundComponents/ │ │ │ ├── Tabs.tsx │ │ │ ├── Example.tsx │ │ ├── ContextAPI/ │ │ │ ├── ThemeProvider.tsx │ │ │ ├── useTheme.ts │ │ │ ├── Example.tsx │ ├── App.tsx │ ├── index.tsx │── README.md │── package.json │── tsconfig.json │── .gitignore │── LICENSE
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1️⃣ Prerequisites
+Ensure you have the following installed:
+- **Node.js** (LTS recommended)
+- **npm** (or `npx`)
+- **Git** (for version control)
 
-### `npm run build`
+### 2️⃣ Installation & Setup
+Clone the repo and install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+git clone https://github.com/root2ja/advanced-react-patterns.git
+cd advanced-react-patterns
+npm install
+3️⃣ Running the Project
+Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 
+npm start
+Then open http://localhost:3000 in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📖 Usage
+🎭 Higher-Order Components
+  
+const EnhancedComponent = withLogger(MyComponent);
+🖱️ Render Props
+  
+<MouseTracker render={(position) => <p>Mouse is at {position.x}, {position.y}</p>} />
+🧩 Compound Components
+  
+<Tabs>
+  <Tabs.Tab label="Tab 1">Content for Tab 1</Tabs.Tab>
+  <Tabs.Tab label="Tab 2">Content for Tab 2</Tabs.Tab>
+</Tabs>
+🎨 Context API for Theme Toggle
+  
+const { theme, setTheme } = useTheme();
+<button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>Toggle Theme</button>
+🛠️ Development & Contribution
+1️⃣ Contribution Guidelines
+Fork the repository.
+Create a new feature branch:
+ 
+git checkout -b feature-branch-name
+Make your changes and commit them:
 
-### `npm run eject`
+git commit -m "Added new feature"
+Push to your fork and create a pull request.
+2️⃣ Development Setup
+To enable hot reloading and debugging:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm run dev
+⚖️ License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📢 Connect with Me
+🔗 GitHub: your-username
+💼 LinkedIn: your-profile
+Give a ⭐️ if you find this helpful!
+Happy coding! 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🔥 What’s Included?
+✅ **Clear project description**  
+✅ **Installation & setup guide**  
+✅ **Code snippets for each pattern**  
+✅ **Contribution guidelines**  
+✅ **License section**  
+✅ **Social media links**  
