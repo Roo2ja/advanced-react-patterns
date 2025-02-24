@@ -16,6 +16,7 @@ A collection of React design patterns to improve reusability, maintainability, a
 ---
 
 ## 📂 Project Structure
+```
 advanced-react-patterns/
 │── src/
 │   ├── patterns/
@@ -39,7 +40,7 @@ advanced-react-patterns/
 │── tsconfig.json
 │── .gitignore
 │── LICENSE
-
+```
 ---
 
 ## 🚀 Getting Started
@@ -58,14 +59,14 @@ git clone https://github.com/root2ja/advanced-react-patterns.git
 cd advanced-react-patterns
 npm install
 ```
-3️⃣ Running the Project
+## 3️⃣ Running the Project
 Start the development server:
 ```sh
 npm start
 ```
 Then open http://localhost:3000 in your browser.
 
-##📖 Usage
+## 📖 Usage
 🎭 Higher-Order Components
  ```tsx 
 const EnhancedComponent = withLogger(MyComponent);
@@ -89,7 +90,7 @@ const EnhancedComponent = withLogger(MyComponent);
 const { theme, setTheme } = useTheme();
 <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>Toggle Theme</button>
 ```
-##🛠️ Development & Contribution
+## 🛠️ Development & Contribution
 1️⃣ Contribution Guidelines
 Fork the repository.
 Create a new feature branch:
@@ -106,7 +107,7 @@ To enable hot reloading and debugging:
  ```bash
 npm run dev
 ```
-##⚖️ License
+## ⚖️ License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 
